@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"/>
+    <meta content="yes" name="apple-mobile-web-app-capable"/>
+    <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+    <meta content="telephone=no" name="format-detection"/>
+    <title>自画像</title>
+    <link href="../assets/css/style.css" rel="stylesheet" type="text/css"/>
+    <script src="../assets/js/jquery-1.9.1.js" charset="utf-8"></script>
+    <script src="../assets/js/core.js" type="text/javascript"></script>
+    <script src="../assets/js/popWin.js" type="text/javascript"></script>
+    <link href="../assets/css/popWin.css" rel="stylesheet" type="text/css"/>
+    <script src="../assets/js/common.js" type="text/javascript"></script>
+    <link href="../assets/css/common.css" rel="stylesheet" type="text/css"/>
+    <script src="../assets/js/iscroll.js" type="text/javascript"></script>
+    <script src="../assets/js/jgestures.min.js" type="text/javascript"></script>
+    <script src="../script/userinfo.js" type="text/javascript"></script>
+
+    <style type="text/css">
+        .win {
+            position: absolute;
+            top: 50px;
+            z-index: 990;
+        }
+    </style>
+</head>
+
+<body>
+<div class="open win" style="display: none">
+    您当前没有填写时辰，填写时辰
+    将让您的缘分指数更加准确。
+    <div class="btnarea" style="background:none;">
+        <a id="goADD" class="ok round4" style="width:140px; margin:0px auto" href="#">去添加时辰</a>
+    </div>
+</div>
+<div class="box">
+    <div class="myinfo round4">
+
+        <div class="lowleft round4"></div>
+        <div class="lowright round4"></div>
+        <div class="avatar1"></div>
+        <div class="txt">
+            <div class="edit round20" id="notComplete">?</div>
+            尊称：IMOVE<br/>
+            生日：1987年3月23日 20时<br/>
+            八字：丙辰 庚寅 丁未 <br/>
+        </div>
+        <div class="clear"></div>
+    </div>
+
+    <div class="myDetail round4">
+        <div class="nav">
+            <div class="navbox">
+                <div class="navon round20">性格</div>
+            </div>
+            <div class="navbox">
+                <div class="navoff round20">爱情</div>
+            </div>
+            <div class="navbox" style="width:36%">
+                <div class="navoff round20" style="width:70px;">分析师</div>
+            </div>
+        </div>
+        <div class="txt" id="content">
+            <div id="scroller" style="padding-bottom: 1px">
+                <p>
+                    爱说话，总是让你进入他的圈子，让你觉得他这么说，就是这么想，其实并不尽然。但辰是有自己的理想的，无论是否现实，辰的理想是虔诚的，真实的。其实辰的变化，是总是觉得有一个更好的在等着他或者她。爱情常有些被动，为什么？超爱面子，男人的尊严，女人的高傲，透明的秀，这一切扭曲后，就是被动，容易错过。</p>
+
+                <p>
+                    爱说话，总是让你进入他的圈子，让你觉得他这么说，就是这么想，其实并不尽然。但辰是有自己的理想的，无论是否现实，辰的理想是虔诚的，真实的。其实辰的变化，是总是觉得有一个更好的在等着他或者她。爱情常有些被动，为什么？超爱面子，男人的尊严，女人的高傲，透明的秀，这一切扭曲后，就是被动，容易错过。</p>
+            </div>
+        </div>
+        <div id="content0" style="display: none">
+            <p>
+                爱说话，总是让你进入他的圈子，让你觉得他这么说，就是这么想，其实并不尽然。但辰是有自己的理想的，无论是否现实，辰的理想是虔诚的，真实的。其实辰的变化，是总是觉得有一个更好的在等着他或者她。爱情常有些被动，为什么？超爱面子，男人的尊严，女人的高傲，透明的秀，这一切扭曲后，就是被动，容易错过。</p>
+
+            <p>
+                爱说话，总是让你进入他的圈子，让你觉得他这么说，就是这么想，其实并不尽然。但辰是有自己的理想的，无论是否现实，辰的理想是虔诚的，真实的。其实辰的变化，是总是觉得有一个更好的在等着他或者她。爱情常有些被动，为什么？超爱面子，男人的尊严，女人的高傲，透明的秀，这一切扭曲后，就是被动，容易错过。</p>
+        </div>
+        <div id="content1" style="display: none">
+            爱情
+        </div>
+        <div id="content2" style="display: none">
+            分析师
+        </div>
+        <div class="clear"></div>
+
+    </div>
+
+</div>
+
+<div class="btnarea">
+    <a id="btnOk" class="add round4" href="#">添加你的男神/女神</a>
+</div>
+<br/><br/><br/><br/><br/>
+
+<div class="toolbar dockBottom">
+    <div class="toolbox">
+        <div class="toolbox1">
+            <div class="toolbtn1"></div>
+        </div>
+        <div class="toolbox1" style="width:36%">
+            <div class="toolbtn2"></div>
+        </div>
+        <div class="toolbox1">
+            <div class="toolbtn3"></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

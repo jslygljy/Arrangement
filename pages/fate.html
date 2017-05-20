@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"/>
+    <meta content="yes" name="apple-mobile-web-app-capable"/>
+    <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+    <meta content="telephone=no" name="format-detection"/>
+    <title>自画像</title>
+    <link href="../assets/css/style.css" rel="stylesheet" type="text/css"/>
+    <script src="../assets/js/jquery-1.9.1.js" charset="utf-8"></script>
+    <script src="../assets/js/core.js" type="text/javascript"></script>
+    <script src="../assets/js/popWin.js" type="text/javascript"></script>
+    <link href="../assets/css/popWin.css" rel="stylesheet" type="text/css"/>
+    <script src="../assets/js/common.js" type="text/javascript"></script>
+    <link href="../assets/css/common.css" rel="stylesheet" type="text/css"/>
+    <link href="../assets/css/mobiscroll.custom-2.5.0.min.css" rel="stylesheet" type="text/css"/>
+    <script src="../assets/js/mobiscroll.custom-2.5.0.min.js" type="text/javascript"></script>
+    <script src="../assets/js/iscroll.js" type="text/javascript"></script>
+    <script src="../assets/js/jgestures.min.js" type="text/javascript"></script>
+    <script src="../script/fate.js" type="text/javascript"></script>
+    <style>
+        .scroller {
+            height: 0px;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            z-index: 555;
+            width: 100%;
+            background: #6adcf1
+        }
+    </style>
+</head>
+
+<body>
+<div id="userCard" class="scroller" style="overflow: hidden;">
+    <div class="headtitle">
+        <img style="margin-top:22px;" id="title_txt" src="../images/t1.png" width="200" height="30"/>
+    </div>
+    <div class="userinfo">
+        <div class="tip"></div>
+        <div class="inputitem"><input class="input name round4" id="nickname" name="" placeholder="请输入昵称" type="text"/></div>
+        <div class="inputitem"><input class="input date round4" id="birthdate" name="" placeholder="请选择出生年月" type="text"/></div>
+        <div class="inputitem"><a class="close" href="#"></a><input class="input hours round4" id="birthtime" name="" placeholder="请选择出生时间" type="text"/></div>
+        <input type="hidden" name="sex" id="sex" value=""/>
+
+
+        <div class="choosesex">
+            <div class="left">
+                <div id="sex_lady" class="lady round4"></div>
+            </div>
+            <div class="right">
+                <div id="sex_mister" class="mister round4"></div>
+            </div>
+        </div>
+
+        <div class="Agreementon"><input type="checkbox" id="ysbh" checked/><span id="ys_txt">我同意热恋隐私保护</span></div>
+
+    </div>
+
+    <div id="userButton" class="btnarea">
+        <a class="ok round4" href="#">完成</a>
+    </div>
+</div>
+
+
+<div id="listScroll" class="scroller">
+    <div id="scroller">
+        <div class="list">
+
+        </div>
+    </div>
+</div>
+<div id="listButton" class="btnarea dockBottom" style="width: 91%;display: none">
+    <a class="add round4" href="#">添加你的男神/女神</a>
+</div>
+
+<div class="box" style="background: #6adcf1">
+    <div class="nav" style="padding:10px 0px 20px 0px;">
+        <div class="navbox" style="width:50%">
+            <div class="navon round20" style="width:90%">我和别人</div>
+        </div>
+        <div class="navbox" style="width:50%">
+            <div class="navoff round20" style="width:90%">算其他人</div>
+        </div>
+    </div>
+    <div id="myyf0" rel="ws" style="display:''">
+        <div class="myinfo round4">
+            <div class="avatar1"></div>
+            <div class="txt">
+                尊称：IMOVE<br/>
+                生日：1987年3月23日 20时<br/>
+                八字：丙辰 庚寅 丁未<br/>
+            </div>
+        </div>
+        <div class="title" style="margin-top:30px;">
+            <div class="b1"><span style="width:140px;">选择你的男神/女神</span></div>
+        </div>
+
+        <div t="m" class="myinfo round4">
+            <div class="add1"></div>
+
+        </div>
+    </div>
+    <div id="myyf1" rel="ws" style="display:none">
+        <div t="t1" class="myinfo round4">
+            <div class="add1"></div>
+        </div>
+        <div class="title" style="margin-top:30px;">
+            <div class="b1"><span style="width:140px;">选择他的男神/女神</span></div>
+        </div>
+        <div t="t2" class="myinfo round4">
+            <div class="add1"></div>
+
+        </div>
+    </div>
+
+
+</div>
+
+<div class="btnarea">
+    <a id="btnOk" class="ok round4" href="#">看看你们的缘分指数</a>
+</div>
+
+<br/><br/><br/><br/><br/><br/>
+<div class="toolbar dockBottom">
+    <div class="toolbox">
+        <div class="toolbox1">
+            <div class="toolbtn1on"></div>
+        </div>
+        <div class="toolbox1" style="width:36%">
+            <div class="toolbtn2"></div>
+        </div>
+        <div class="toolbox1">
+            <div class="toolbtn3"></div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!doctype html>
+<html class="m js cssanimations">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="1">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <title>修改用户资料</title>
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-siteapp"/>
+  <link rel="icon" type="image/png" href="assets/i/favicon.png">
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="icon" sizes="192x192" href="assets/i/app-icon72x72@2x.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Amaze UI"/>
+  <link rel="apple-touch-icon-precomposed" href="assets/i/app-icon72x72@2x.png">
+  <meta name="msapplication-TileImage" content="assets/i/app-icon72x72@2x.png">
+  <link rel="stylesheet" href="assets/css/amazeui.min.css">
+  <link rel="stylesheet" href="assets/css/amaze.min.css">
+  <link rel="stylesheet" href="assets/css/app.css">
+</head>
+<body>
+<header class="demo-header"><h1>修改信息</h1></header>
+<span></span>
+<form id="your-form" action="" data-am-validator class="am-form am-form-inline">
+  <div class="am-form-group am-form-icon">
+    <i class="am-icon-user"></i>
+    <input type="text" class="am-form-field" placeholder="昵称" required>
+  </div>
+
+  <div class="am-form-group am-form-icon">
+    <i class="am-icon-calendar"></i>
+    <input type="text" class="am-form-field" placeholder="日历组件" id="doc-datepicker">
+  </div>
+
+  <div class="am-form-group am-form-icon">
+    <i class="am-icon-clock-o"></i>
+    <select style="width:100%;text-indent: 22px;">
+      <option selected>0点</option>
+      <option>1点</option>
+      <option>2点</option>
+      <option>3点</option>
+      <option>4点</option>
+      <option>5点</option>
+      <option>6点</option>
+      <option>7点</option>
+      <option>8点</option>
+      <option>9点</option>
+      <option>10点</option>
+      <option>11点</option>
+      <option>12点</option>
+      <option>13点</option>
+      <option>14点</option>
+      <option>15点</option>
+      <option>16点</option>
+      <option>17点</option>
+      <option>18点</option>
+      <option>19点</option>
+      <option>20点</option>
+      <option>21点</option>
+      <option>22点</option>
+      <option>23点</option>
+    </select>
+  </div>
+  <div class="am-btn-group" data-am-button style="margin-top:20px;">
+    <label class="am-btn am-btn-primary am-active">
+      <input type="radio" name="options" id="option1">
+      <img src="images/sex_man.png">
+    </label>
+    <label class="am-btn am-btn-primary">
+      <input type="radio" name="options" id="option2">
+      <img src="images/sex_woman.png">
+    </label>
+  </div>
+  <label class="am-checkbox" style="margin: 13px auto;width: 200px;">
+      <input type="checkbox" checked="checked" value="" data-am-ucheck checked>
+      我同意热恋隐私保护
+    </label>
+</form>
+<button type="submit" class="am-btn am-btn-primary am-btn-block am-btn-warning" id="add_person"><i class="am-icon-plus-circle"></i>下一步</button>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/amazeui.min.js"></script>
+<script type="text/javascript">
+  $(function() {
+  $('#your-form').validator();
+
+});
+$(function() {
+  $('#doc-datepicker').datepicker().
+    on('changeDate.datepicker.amui', function(event) {
+      $(this).datepicker('close');
+    });
+});
+</script>
+</body>
+</html>

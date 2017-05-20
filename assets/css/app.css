@@ -1,0 +1,60 @@
+/* Write your styles */
+html,body
+{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family:"Microsoft YaHei";
+    background-color: #6adcf1;
+}
+#add_person{width: 90%;
+margin: 0 auto;border-radius:5px;}
+#add_person i{margin-right:10px;}
+.m-widget-list{margin-bottom: 20px;}
+.wrap
+{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.am-list li{background-color: #3AB7CB;
+width:90%;
+margin: 0 auto;
+border: none;
+padding: 0px;
+font-size: 15px;
+text-indent: 11px;margin-top: 7px;font-weight: bold;}
+.am-list li a{color: #fff;}
+.am-list .am-icon-angle-right{float: right;
+color: #2D8594;
+font-size: 31px;
+margin-right: 9px;}
+.m-widget-list .am-round{border-radius: 10px;
+position: absolute;padding: 6px 13px;
+right: 68px;
+top: 11px;
+padding: 2px 8px;
+font-size: 23px;}
+.m-widget-list .am-btn-danger{position: absolute;
+right: 29px;
+top:11px;}
+.m .demo-header{background-color:#0999B3;}
+.sex_div{}
+.sex_div li{list-style: none;display:table-cell;vertical-align:middle;text-align:center;
+width: 30%;
+background-color: #FF686D;
+margin-left: 5%;
+margin-right: 14%;
+height: 91px;}
+.sex_div img {vertical-align:middle;}
+
+.am-form-inline .am-btn-group .am-btn-primary{margin-left: 10%;border-radius: 5px;width: 35%;background-color: #b2f1fb;border: #b2f1fb;}
+.am-form-inline .am-btn-group .am-active{background-color: #ff696d;border-color: #ff696d}
+.am-form-inline .am-btn-group .am-active img{box-shadow: 3px 8px 21px #da464b;border-radius: 200px;}
+.am-form-inline .am-btn-group img{box-shadow: 3px 8px 21px #58cbe2;border-radius: 200px;}
+.am-form-inline .am-btn-group{width: 100%;}
+.am-form .am-form-group {width: 90%;background-color: #b2f1fb;margin:24px auto 0px;}
+.am-form .am-form-group input,.am-form .am-form-group select{background-color: #b2f1fb;border: none;}
+span.error{color: #ff686d;margin: 0px 0px -10px 22px;display: inline-block;vertical-align: bottom;}
